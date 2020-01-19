@@ -1,0 +1,130 @@
+/*
+	Theme Name: wp_bootstrap_01
+	Author: Md Abdul Majid
+	Author URI: https://www.facebook.com/abdulmajidweb/
+	Description: This is my first wordpress theme that's using bootstrap.
+	Version: 1.0.0
+*/
+a{
+	text-decoration: none !important;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+.main_nav{
+	background-color:#8686f0;
+	z-index: 10;
+}
+.navbar-nav .menu-item{
+    padding: 5px;
+    position: relative;
+}
+.navbar-nav .menu-item a{
+	color: white;
+	text-decoration: none;
+}
+.navbar-nav .menu-item a:hover{
+	color: black;
+}
+.navbar-nav .menu-item .sub-menu{
+	list-style-type: none;
+	position: absolute;
+	left: -999999px;
+}
+.navbar-nav .menu-item:hover .sub-menu{
+	left: 0;
+	min-width: 150px;
+	z-index: 20;
+}
+.navbar-nav .menu-item .sub-menu .menu-item{
+	background-color: #8686f0;
+	position: relative;
+}
+.navbar-nav .menu-item .sub-menu .menu-item:hover a{
+	margin-left: 5px;
+	transition: all ease 0.20s;
+}
+.navbar-nav .menu-item .sub-menu .menu-item .sub-menu{
+	position: absolute;
+	left: 65px;
+	top: -999999px;
+}
+.navbar-nav .menu-item .sub-menu .menu-item:hover .sub-menu{
+	top: 0;
+}
+.navbar-nav .menu-item .sub-menu .menu-item .sub-menu .menu-item:hover a{
+	margin-left: 10px;
+	transition: all ease 0.20s;
+}
+.current-menu-item{
+	background: black;
+}
+.current-menu-item:hover{
+	background: green;
+}
+li.dropdown{
+	position: relative;
+}
+div.dropdown-menu{
+	position: absolute;
+	top: 35px;
+}
+li.dropdown:hover div.dropdown-menu{
+	display: block;
+}
+marquee>ul li{
+	list-style-type: none;
+	float: left;
+	margin-right: 10px;
+}
+/*sidebar*/
+.sidebar ul{
+	background: white;
+	border-radius: 4px;
+	list-style-type: decimal;
+}
+.sidebar ul li{
+	border-bottom: 1px solid black;
+}
+.sidebar ul li:last-child{
+	border-bottom: none;
+}
+/*slider*/
+.carousel-item img{
+	width: 100%;
+	height: 50vh;
+}
+/*notice*/
+.notice img{
+	width: 100%;
+	height: 50vh;
+}
+.recentNotice ul{
+	list-style-type: none;
+}
+.recentNotice{
+	list-style-type: none;
+}
+.recentNotice ul li{
+	float: left;
+	margin-right: 10px;
+}
+.recentNotice ul li:before{
+	content: " ";
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	background: red;
+}
+input{
+	width: 100%;
+}
+input[type='submit']{
+	width: auto;
+}
+textarea{
+	width: 100%;
+}
+.pagination {  clear: both;     padding: 5px 0;     position: relative;     font-size: 96%;     line-height: 13px;     margin: 0.5em 0;     overflow: hidden; } .pagination span{padding:0 13px;} .pagination span, .pagination a {  display:block;  float:left;  margin: 2px 2px 2px 0;  padding:11px;  text-decoration:none;  width:auto;  color:#fff;  background: #555; }   .pagination a:hover{  color:#fff;  background: #6B710E; } 
+  .pagination .current{ padding:11px;  background: #6B710E; color:#fff; } 
